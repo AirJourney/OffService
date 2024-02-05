@@ -1,0 +1,59 @@
+{
+  "name": "Offline",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "egg": "^3",
+    "egg-scripts": "^2",
+    "art-template": "^4.13.2",
+    "bcryptjs": "^2.4.3",
+    "egg-cluster": "^1.27.1",
+    "egg-cors": "^2.2.3",
+    "egg-jwt": "^3.1.7",
+    "egg-mongoose": "^3.2.0",
+    "egg-redis": "^2.4.0",
+    "jsexecpy": "^1.1.0",
+    "momentjs": "^2.0.0",
+    "nodemailer": "^6.7.3",
+    "uuid": "^8.3.2",
+    "xml2js": "^0.4.19",
+    "zlib": "^1.0.5",
+    "crypto-js": "^4.1.1",
+    "compression": "^1.7.4"
+  },
+  "devDependencies": {
+    "egg-bin": "^5",
+    "egg-ci": "^2",
+    "egg-mock": "^5",
+    "eslint": "^8",
+    "eslint-config-egg": "^12"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-Offline --port=6001",
+    "stop": "egg-scripts stop --title=egg-server-Offline",
+    "dev": "egg-bin dev --port=6001",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "ci": {
+    "version": "16, 18",
+    "type": "github"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
